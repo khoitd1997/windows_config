@@ -11,6 +11,8 @@ choco install -y ${choco_app_list}
 
 # TODO: add scoop app list if possible
 
+# TODO: figure out how to configure cmder
+
 # vscode stuffs
 # TODO: Make this a git submodule
 if [ ! -d fedora_kd ]; then
