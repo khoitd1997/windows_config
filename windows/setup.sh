@@ -12,7 +12,8 @@ choco install -y ${choco_app_list}
 
 # TODO: add scoop app list if possible
 
-# TODO: figure out how to configure cmder
+# symlink on git bash is weird
+cp -v cmder/ConEmu.xml /c/tools/Cmder/vendor/conemu-maximus5/ConEmu.xml
 
 git submodule init
 git submodule update
