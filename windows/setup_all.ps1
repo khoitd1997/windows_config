@@ -1,3 +1,5 @@
+# used for setting up windows software
+
 Write-Host "Starting Windows Configuration"
 
 # app install and other setup
