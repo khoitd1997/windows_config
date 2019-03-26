@@ -39,3 +39,19 @@ Ctrl & h::
 send {Backspace}
 return ;
 #IfWinActive
+
+~LWin & q::
+send !{F4}
+return
+
+#m::
+Run, Code, max
+return
+
+#b::
+Run, chrome, max
+return
+
+#Enter::
+Run, Cmder, max
+return
