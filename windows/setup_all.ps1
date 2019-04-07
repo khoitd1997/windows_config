@@ -6,7 +6,7 @@ Write-Host "Starting Windows Configuration"
 .\setup.sh
 
 # create tasks to automatically update choco
-$action = New-ScheduledTaskAction -Execute 'choco' -Argument 'upgrade all'
+$action = New-ScheduledTaskAction -Execute 'choco' -Argument 'upgrade all -y'
 
 $trigger =  New-ScheduledTaskTrigger -AtLogon
 
