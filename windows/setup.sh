@@ -2,13 +2,13 @@
 
 set -e
 
-choco_app_list="googlechrome git.install putty.install autohotkey.portable vscode github-desktop slack dropbox cmder spotify llvm python virtualbox foxitreader vlc mobaxterm "
+choco_app_list="googlechrome git.install putty.install autohotkey.portable vscode github-desktop slack dropbox cmder spotify llvm python virtualbox foxitreader vlc mobaxterm make ninja cmake curl "
 
 currDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd ${currDir}
 #----------------------------------------------------------------------------------------------------------
 
-choco install -y ${choco_app_list}
+choco install -Y ${choco_app_list}
 
 # TODO: add scoop app list if possible
 

@@ -9,7 +9,7 @@ Write-Host "Starting Windows Configuration"
 cp .\autohotkey\autohotkey_script.ahk  "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
 
 # create tasks to automatically update choco
-$action = New-ScheduledTaskAction -Execute 'choco' -Argument 'upgrade all -y'
+$action = New-ScheduledTaskAction -Execute 'choco' -Argument 'upgrade all -Y'
 
 $trigger =  New-ScheduledTaskTrigger -AtLogon
 

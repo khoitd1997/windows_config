@@ -7,7 +7,7 @@ repo for configuring a new Windows install
 ```shell
 # launch powershell in admin mode
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-cd C:\Users\khoid\windows_config\
+cd C:\Users\khoid\windows_config\windows
 
 .\setup_all.ps1
 ```
