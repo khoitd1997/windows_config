@@ -2,7 +2,7 @@
 
 set -e
 
-choco_app_list="googlechrome git.install putty.install autohotkey vscode github-desktop slack dropbox cmder spotify llvm python virtualbox foxitreader vlc mobaxterm make ninja cmake curl firefox "
+choco_app_list="googlechrome git.install putty.install autohotkey vscode github-desktop slack dropbox cmder spotify llvm python virtualbox foxitreader vlc mobaxterm make ninja cmake curl firefox 7zip "
 
 currDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd ${currDir}
