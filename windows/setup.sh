@@ -11,8 +11,7 @@ choco install -Y ${choco_app_list}
 # symlink on git bash is weird
 ln -sfv ${currDir}/cmder/ConEmu.xml /c/tools/Cmder/vendor/conemu-maximus5/ConEmu.xml
 
-git submodule init
-git submodule update
+git submodule update --init --remote
 
 # vscode stuffs
 bash ../fedora_kd/userland/vscode/vscode_extension.sh
