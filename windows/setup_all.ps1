@@ -6,7 +6,10 @@ Write-Host "Starting Windows Configuration"
 .\setup.sh
 
 # configure autohotkey
-cp .\autohotkey\autohotkey_script.ahk  "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
+New-Item -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\autohotkey_script.ahk" `
+         -ItemType SymbolicLink `
+         -Value "$PSScriptRoot\autohotkey\autohotkey_script.ahk" `
+         -Force
 
 # create tasks to automatically update choco
 $action = New-ScheduledTaskAction -Execute 'choco' -Argument 'upgrade all -Y'

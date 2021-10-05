@@ -1,10 +1,10 @@
 # windows_config
 
-repo for configuring a new Windows install
+Repo for configuring a new Windows install
 
 ## Instruction
 
-```shell
+```PowerShell
 # launch powershell in admin mode
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 cd C:\Users\khoid\windows_config\windows
