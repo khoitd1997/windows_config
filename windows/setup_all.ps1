@@ -2,6 +2,8 @@
 
 Write-Host "Starting Windows Configuration"
 
+& "$PSScriptRoot\..\test_setup.ps1"
+
 # app install and other setup
 .\setup.sh
 

@@ -1,4 +1,4 @@
-got from https://chocolatey.org/install
+# got from https://chocolatey.org/install
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 New-Item -Path "$profile" `
@@ -12,8 +12,21 @@ New-Item -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wek
          -Force
 
 choco install -y microsoft-windows-terminal --pre
-# TODO: Migrate setup.sh to this
-$choco_app_list = "fzf","sourcecodepro","powershell-core"
+$choco_app_list = @(
+    "fzf"
+    "sourcecodepro"
+    "powershell-core"
+    "googlechrome"
+    "git.install"
+    "putty.install" 
+    "autohotkey" 
+    "vscode"
+    "github-desktop"
+    "dropbox" 
+    "spotify"
+    "python"
+    "firefox"
+)
 foreach ($choco_app in $choco_app_list)
 {
     choco install -y $choco_app
